@@ -1,0 +1,143 @@
+@import "componentes.less";
+@import "header.less";
+@import "footer.less";
+
+#pai{
+	background-color: #DBD8D8;
+	.bg{
+		border: 1px solid @borda-box;
+		.borderRadius(6px);
+		background-color: @cor02;
+		#accordion{
+			margin: 20px;
+		}
+	} 
+	#conteudo{
+		display: inline-block;
+		margin-top: 170px;
+		width: 100%;
+		.equipe{
+			.borderRadius(6px);
+			margin: 0 20px;
+			max-width: 100%;
+		}
+	}
+
+	#conteudo, #regras, #duvidas, #cadastro{
+		margin-bottom: 20px;
+		.titulo{
+			border-bottom: 1px solid @borda-box;
+			color: @cor04;
+			font-family: @roboto;
+			font-size: 20px;
+			font-weight: 500;
+			height: 60px;
+    		line-height: 60px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+		}
+		p{
+			line-height: 1.4;
+			padding: 0 20px 20px 20px;
+		}
+		.ui-accordion-header{
+			font-size: 16px;
+			font-family: @roboto;
+			font-weight: 600;
+		}
+		.ui-accordion-content{
+			height: auto !important;
+			p{
+				font-size: 16px;
+				font-family: @roboto;
+				font-weight: 300;
+			}
+		}
+	}
+
+	#cadastro{
+		.form{
+			border-right: 1px solid #E8E2E2;
+    		padding-right: 20px;
+    		margin-left: 20px;
+			width: 35%;
+			label{
+				display: block;
+				margin: 0 0 5px 5px;
+				font-family: @roboto;
+				font-weight: 300;
+			}
+			textarea
+				height: 60px;
+			input[type="text"], textarea, select{
+				width: 100%;
+			}
+			input, textarea, select{
+				.borderRadius(6px);
+				border: 1px solid @borda-box;
+				height: 30px;
+				margin-bottom: 10px;
+				padding-left: 10px;
+
+				&:focus{
+					border: 1px solid @borda-box;
+					-moz-box-shadow:  0 1px 10px #aec3e5;
+				    -webkit-box-shadow:  0 1px 10px #aec3e5;
+				    box-shadow:  0 1px 10px #aec3e5;
+				}
+			}
+			#envia{
+				.borderRadius(6px);
+				cursor: pointer;
+				border: 1px solid @borda-box;
+				padding: 5px 10px;
+				&:hover{
+					background-color: @corAtiva;
+					color: #fff;
+				}
+			}
+			select{
+				max-width: 200px;
+			}
+		}
+
+		.cadastrados{
+			height: auto;
+			margin: 0 20px 20px 20px;
+			overflow: hidden;
+			width: 58%;
+			.titulo-user{
+				border-bottom: 1px solid @borda-box;
+				color: @cor04;
+				font-family: @roboto;
+				font-weight: 600;
+				font-size: 18px;
+				margin-bottom: 20px;
+				padding-bottom: 5px;
+			}
+			.list-user{
+				height: 327px;
+				.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+				    background-color: rgba(240, 44, 45, 0.75);
+				}
+				.mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+					background-color: #f02c2d;
+				}
+				table{
+					display: table;
+					width: 100%;
+					td{
+						display: table-cell;
+						height: 30px;
+						vertical-align: middle;
+					}
+					tr:nth-child(even){
+						background-color: #f7f7f7;
+					}
+				}
+			}
+			
+		}
+	}
+}
+	

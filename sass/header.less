@@ -1,0 +1,43 @@
+#Header{
+    background: rgba(18, 17, 17, 0.9);
+	min-height: 120px;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	box-shadow: -2px 1px 12px #5C0404;
+	.logo{
+		background: url(../img/logo.png) no-repeat;
+		background-size: 100px;
+		height: 100px;
+		margin-top: 10px;
+		width: 100px;
+		a{
+			background: url(../img/logo.png) no-repeat;
+			height: 100px;
+			width: 100px;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+		}
+	}
+	.menu-principal{
+		margin-top: 30px;
+		.list-item{
+			float: left;
+			font-family: @roboto;
+			font-size: 16px;
+			margin-left: 20px;
+			a{
+				color: @corLink;
+				padding-bottom: 4px;
+				&:hover{
+					.transicao(all, 1s);
+					border-bottom: 2px solid @corAtiva;
+  					padding-bottom: 4px;
+				}
+			}
+		}
+	}
+
+}
